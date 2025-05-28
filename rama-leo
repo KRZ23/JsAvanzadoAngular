@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contacto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <!-- Bootstrap CSS v5.2.1 y FontAwesome-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="border-bottom shadow-sm text-uppercase">
+        <nav class="navbar navbar-expand-lg  py-3">
+            <div class="container d-flex align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand me-3" href="../index.html">
+                    <img src="../img/Logo Jimdur/logo_sinfondo_negro.png" alt="Logo Jimdur" width="100" id="logoJimdur">
+                </a>
+
+                <!-- Formulario de búsqueda (centrado en pantallas pequeñas) -->
+                <div class="d-flex d-lg-none flex-grow-1">
+                    <form class="d-flex flex-grow-1" role="search" action="#" style="width: 50px;">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                        <button class="btn btn-outline-danger" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+
+                <!-- Botón de menú móvil -->
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces de navegación (colapsable) -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <button id="toggle-buttonsm" class="btn btn-danger ms-2 mt-3 d-block d-lg-none" type="button">
+                            <i class="fas fa-sun "></i> <!-- Ícono de sol para modo claro -->
+                        </button>
+                    </ul>
+                </div>
+                <!-- Formulario de búsqueda (visible solo en pantallas grandes) -->
+                <div class="d-none d-lg-flex ms-auto align-items-center">
+                    <form class="d-flex align-items-center" role="search" action="#">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                        <button class="btn btn-danger" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button id="toggle-buttonlg" class="btn btn-danger ms-2" type="button">
+                        <i class="fas fa-sun"></i> <!-- Ícono de sol para modo claro -->
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    --------------------------------------- <!-- Sección de Feedback y Horarios de Atención -->
+        <div class="container-fluid bg-light py-4 div-info-adicional">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row">
+                    <!-- Sección de Feedback -->
+                    <div class="col-lg-6 mt-3 card-formFed">
+                        <h2 class="fw-bold text-center text-uppercase">Deja tu <span class="text-danger">reseña</span>
+                        </h2>
+                        <form class="feedback-form bg-white p-4 rounded shadow-sm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control bg-light" placeholder="Nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control bg-light" placeholder="Correo Electrónico"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control bg-light" rows="8" placeholder="Tu reseña"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100">Enviar Reseña</button>
+                        </form>
+                    </div>
+
+                    <!-- Sección de Horarios de Atención -->
+                    <div class="col-lg-6 mt-0">
+                        <h2 class="text-center fw-bold pt-3 text-uppercase">Horarios <span class="text-danger">de
+                                Atencion</span></h2>
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="col-12 mb-3">
+                                <div class="p-4 border bg-white rounded shadow-sm div-horario">
+                                    <h4>Lunes a Viernes</h4>
+                                    <p>9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="p-4 border bg-white rounded shadow-sm div-horario">
+                                    <h4>Sábados</h4>
+                                    <p>9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="p-4 border bg-white rounded shadow-sm div-horario">
+                                    <h4>Domingos y Feriados</h4>
+                                    <p>Cerrado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Formularios -->
+        <section class="formularios-section py-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <!-- Sección de Contacto -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="p-4 rounded shadow-sm card-contacto">
+                            <h2 class="fw-bold text-center mb-3" style="color: #333333;">
+                                CONTÁC<span class="text-danger">TANOS</span>
+                            </h2>
+                            <p class="text-muted text-center">Tu consulta es importante para nosotros</p>
+
+                            <!-- Información de contacto -->
+                            <div class="d-flex justify-content-between my-4">
+                                <!-- Teléfono -->
+                                <div class="text-center">
+                                    <img src="../img/iconos/telefono.svg" alt="Teléfono" class="mb-2"
+                                        style="width: 40px;">
+                                    <p class="mb-0">(+51) 968108775</p>
+                                </div>
+                                <!-- Ubicación -->
+                                <div class="text-center">
+                                    <img src="../img/iconos/Ubicación.svg" alt="Ubicación" class="mb-2"
+                                        style="width: 40px;">
+                                    <p class="mb-0">Av. José Aguilar Santisteban, Piura - Perú</p>
+                                </div>
+                                <!-- Correo -->
+                                <div class="text-center">
+                                    <img src="../img/iconos/correo.svg" alt="Correo" class="mb-2" style="width: 40px;">
+                                    <p class="mb-0">info@jimdurr.com</p>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="mt-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1730094624124!5m2!1ses!2spe"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Cotización -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <form class="p-4 rounded shadow-sm card-form" id="cotizacion-form">
+                            <h2 class="text-center mb-4 fw-bold" style="color: #333333;">
+                                SOLICITE SU <span class="text-danger">COTIZACIÓN</span>
+                            </h2>
+
+                            <!-- Campos del formulario -->
+                            <div class="mb-3">
+                                <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                                <small class="error-message text-danger"></small>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" id="correo" class="form-control" placeholder="Correo Electrónico"
+                                    required>
+                                <small class="error-message text-danger"></small>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" id="telefono" class="form-control" placeholder="Teléfono" required>
+                                <small class="error-message text-danger"></small>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="dni" class="form-control" placeholder="DNI o RUC">
+                                <small class="error-message text-danger"></small>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="placa" class="form-control" placeholder="Placa vehicular o VIN">
+                                <small class="error-message text-danger"></small>
+                            </div>
+                            <div class="mb-3">
+                                <select id="asunto" class="form-control" required>
+                                    <option value="" disabled selected>Seleccione un asunto</option>
+                                    <option value="queja">Queja</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="reclamo">Reclamo</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                                <small class="error-message text-danger"></small>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="mensaje" class="form-control" rows="4" placeholder="Mensaje"
+                                    required></textarea>
+                                <small class="error-message text-danger"></small>
+                            </div>
+
+                            <!-- Botón de enviar -->
+                            <button type="submit" class="btn btn-danger w-100" id="submit-btn">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Preguntas Frecuentes (FAQ) -->
+        <section class="faq-section py-5">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <!-- Título -->
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="fw-bold text-uppercase">
+                            Preguntas <span class="text-danger">Frecuentes</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Acordeón de Preguntas Frecuentes -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="accordion" id="faqAccordion">
+                            <!-- Pregunta 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ¿Qué tipo de repuestos ofrecen?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ofrecemos una amplia gama de repuestos y accesorios para motocicletas de
+                                        diversas marcas y modelos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Realizan envíos a domicilio?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sí, realizamos envíos a domicilio dentro de la ciudad y también a otras
+                                        localidades bajo ciertas condiciones.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        ¿Cómo puedo hacer un pedido?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Puedes realizar tu pedido a través de nuestro formulario de contacto o
+                                        llamándonos directamente.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Carrusel de Proveedores -->
+        <section class="container-fluid proveedores-section">
+            <div class="slider py-2"">
+            <div class=" slide-track">
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-light" style="background-color: rgb(35, 35, 35);">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Conéctate con nosotros en las redes sociales:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com/" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/" class="me-4 text-reset">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="me-4 text-reset">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">SOBRE JIMDUR</h6>
+                        <p>
+                            Ofrecemos repuestos y accesorios de alta calidad para un rendimiento superior. Confiamos en
+                            nuestras
+                            marcas y experiencia para brindarte el mejor servicio y satisfacción. Tu moto está en buenas
+                            manos con
+                            nosotros.
+                        </p>
+                        <p style="font-size: 12px;">&copy; Jimdur 2024</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">ENLACES</h6>
+                        <p>
+                            <a href="../index.html" class="text-reset">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="productos.html" class="text-reset">Productos</a>
+                        </p>
+                        <p>
+                            <a href="nosotros.html" class="text-reset">Nosotros</a>
+                        </p>
+                        <p>
+                            <a href="contacto.html" class="text-reset">Contáctanos</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Contact -->
+                        <h6 class="text-uppercase fw-bold mb-4">CONTACTOS</h6>
+                        <p>
+                            <i class="fas fa-phone me-3"></i>
+                            <a href="tel:123456789" class="text-reset">123456 789</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone me-3"></i>
+                            <a href="tel:987654321" class="text-reset">987654 321</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:jimdur@gmail.com" class="text-reset">jimdur@gmail.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Derechos Reservados:
+            <a class="text-reset fw-bold" href="Politicas.html#terminos-condiciones" target="_blank">JIMDUR
+                Repuestos</a>
+        </div>
+        <style>
+
+        </style>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="../js/contacto.js"></script>
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
