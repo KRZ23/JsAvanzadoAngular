@@ -1,0 +1,52 @@
+<!-- Register Component -->
+<div class="container-fluid p-0">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-danger" ng-if="$ctrl.error" role="alert">
+                {{$ctrl.error}}
+            </div>
+            <form ng-submit="$ctrl.register()" class="px-2">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" ng-model="$ctrl.user.firstName"
+                            placeholder="Tu nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" ng-model="$ctrl.user.lastName"
+                            placeholder="Tu apellido" required>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="registerEmail" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="registerEmail" ng-model="$ctrl.user.email"
+                        placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="phone" ng-model="$ctrl.user.phone"
+                        placeholder="Teléfono de contacto">
+                </div>
+                <div class="mb-3">
+                    <label for="registerPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="registerPassword" ng-model="$ctrl.user.password"
+                        placeholder="Crea una contraseña" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                    <input type="password" class="form-control" id="confirmPassword" ng-model="$ctrl.user.confirmPassword"
+                        placeholder="Repite la contraseña" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" ng-model="$ctrl.termsAccepted" required>
+                    <label class="form-check-label" for="termsCheck">Acepto los <a href="#"
+                            class="text-danger">términos y condiciones</a></label>
+                </div>
+                <div class="d-grid mb-2">
+                    <button type="submit" class="btn btn-danger" ng-disabled="!$ctrl.termsAccepted">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

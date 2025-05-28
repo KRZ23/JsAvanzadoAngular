@@ -1,0 +1,105 @@
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.search-form {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-form input {
+    border: none;
+    padding-right: 40px;
+}
+
+.search-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: none;
+    padding: 0 15px;
+    color: #6c757d;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    padding: 8px;
+    position: relative;
+    color: #6c757d;
+}
+
+.btn-icon:hover {
+    color: #000;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.dropdown-menu {
+    min-width: 300px;
+    padding: 15px;
+}
+
+.cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Estilos responsive */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+
+    .navbar-nav {
+        margin-bottom: 1rem;
+    }
+
+    .search-form {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .btn-icon {
+        padding: 4px 8px;
+    }
+}
+
+/* Ajustes para el modal de autenticación */
+.auth-tabs .nav-link {
+    color: #6c757d;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 1rem;
+}
+
+.auth-tabs .nav-link.active {
+    color: #dc3545;
+    border-bottom: 2px solid #dc3545;
+    background: none;
+}

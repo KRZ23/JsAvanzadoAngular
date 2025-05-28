@@ -1,0 +1,50 @@
+<!-- Login Component -->
+<div class="container-fluid p-0">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-danger" ng-if="$ctrl.error" role="alert">
+                {{$ctrl.error}}
+            </div>
+            <form ng-submit="$ctrl.login()" class="px-2">
+                <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="loginEmail" ng-model="$ctrl.user.email"
+                        placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="loginPassword" class="form-label">Contraseña</label>
+                    <div class="position-relative">
+                        <input type="password" class="form-control" id="loginPassword" ng-model="$ctrl.user.password"
+                            placeholder="Ingresa tu contraseña" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" ng-model="$ctrl.rememberMe">
+                            <label class="form-check-label" for="rememberMe">Recordarme</label>
+                        </div>
+                        <a href="#" ng-click="$ctrl.showResetPassword($event)" class="text-danger text-decoration-none">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div>
+                </div>
+                <div class="d-grid mb-4">
+                    <button type="submit" class="btn btn-danger py-2">Iniciar Sesión</button>
+                </div>
+
+                <div class="text-center mb-4">
+                    <p class="text-muted mb-3">O inicia sesión con:</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="button" class="btn btn-outline-primary px-4 py-2" ng-click="$ctrl.loginWithFacebook()">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger px-4 py-2" ng-click="$ctrl.loginWithGoogle()">
+                            <i class="fab fa-google"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
