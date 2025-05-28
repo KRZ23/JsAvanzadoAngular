@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Casco HJC C-S3X NEGRO/ROJO/GRIS/BLANCO L",
+    "precio": 1049,
+    "imagen": "img/casco.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "FILTRO DE AIRE UNIVERSAL 76X1.4 - PULGADAS",
+    "precio": 56,
+    "imagen": "img/filtro.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "ACEITE HONDA 4T 10W30 1000ML",
+    "precio": 44,
+    "imagen": "img/aceite.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "MINI FILTRO DE AIRE UNIVERSAL ROJO 1.25M",
+    "precio": 27,
+    "imagen": "img/filtrp_aire.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "GUANTE GT447 INVIERNO URBAN MOM MD#",
+    "precio": 256,
+    "imagen": "img/guantes.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "Producto prueba 2 (actualizado)",
+    "precio": 999,
+    "imagen": "img/prueba.webp"
+  }
+]

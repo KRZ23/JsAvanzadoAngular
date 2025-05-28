@@ -1,0 +1,47 @@
+<div ng-controller="ProductosController as vm" class="container mt-5">
+  <!-- ENCABEZADO -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">Productos</h2>
+    <a href="#!/carrito" class="btn btn-danger">
+      🛒 Ver Carrito ({{vm.carrito.length}})
+    </a>
+  </div>
+
+  <!-- DESCRIPCIÓN -->
+  <p>Encuentra los mejores repuestos y accesorios para motos.</p>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="row">
+    <!-- CATEGORÍAS -->
+    <div class="col-md-3 mb-4">
+      <h5 class="fw-bold">Categorías</h5>
+      <ul class="list-group">
+        <li class="list-group-item">Ninguna</li>
+        <li class="list-group-item">Sistema de Frenos</li>
+        <li class="list-group-item">Sistema Eléctrico</li>
+        <li class="list-group-item">Motor y Transmisión</li>
+        <li class="list-group-item">Suspensión y Dirección</li>
+        <li class="list-group-item">Llantas y Ruedas</li>
+        <li class="list-group-item">Accesorios de Seguridad</li>
+      </ul>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-4 mb-4" ng-repeat="p in vm.productos">
+          <div class="card h-100 text-center">
+            <img ng-src="{{p.imagen}}" class="card-img-top" alt="{{p.nombre}}">
+            <div class="card-body">
+              <h6 class="card-title">{{p.nombre}}</h6>
+              <p class="card-text">S/ {{p.precio}}</p>
+<button class="btn btn-danger" ng-click="vm.agregarAlCarrito(p)">Agregar al carrito</button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

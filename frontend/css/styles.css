@@ -1,0 +1,106 @@
+/* === CATEGORÍAS === */
+
+.col-md-3 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.col-md-3 h5 {
+  color: #9d1c20;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list-group {
+  width: 100%;
+}
+
+.list-group-item {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 12px 16px;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.list-group-item:hover {
+  background-color: #ffe8e8;
+  color: #9d1c20;
+  transform: translateX(3px);
+}
+
+.list-group-item.active {
+  background-color: #9d1c20;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(157, 28, 32, 0.3);
+}
+
+
+/* === PRODUCTOS === */
+
+.col-md-9 h2 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.col-md-9 p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 160px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  min-height: 45px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.btn-danger {
+  background-color: #9d1c20;
+  border: none;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn-danger:hover {
+  background-color: #7e181b;
+}

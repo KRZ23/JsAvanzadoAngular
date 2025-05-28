@@ -1,0 +1,22 @@
+[
+  {
+    "clave": "nombre",
+    "etiqueta": "Nombre completo"
+  },
+  {
+    "clave": "documentoIdentidad",
+    "etiqueta": "Documento de Identidad"
+  },
+  {
+    "clave": "correoElectronico",
+    "etiqueta": "Correo Electrónico"
+  },
+  {
+    "clave": "numeroTarjeta",
+    "etiqueta": "Número de Tarjeta"
+  },
+  {
+    "clave": "ciudad",
+    "etiqueta": "Ciudad de residencia"
+  }
+]

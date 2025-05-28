@@ -1,0 +1,72 @@
+<div class="container mt-5">
+  <h2 class="mb-4 text-danger">Carrito de Compras</h2>
+  <div class="row">
+
+    <!-- Lista de productos -->
+    <div class="col-md-8">
+      <div class="row g-4">
+        <div class="col-md-6" ng-repeat="p in vm.carrito">
+          <div class="card h-100 shadow">
+            <img ng-src="{{p.imagen}}" class="card-img-top" alt="{{p.nombre}}">
+            <div class="card-body">
+              <h5 class="card-title">{{p.nombre}}</h5>
+              <p class="card-text">S/ {{p.precio}}</p>
+              <button class="btn btn-outline-danger w-100" ng-click="vm.eliminarDelCarrito(p.id)">
+                Eliminar del carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resumen -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h4 class="card-title text-center">Resumen</h4>
+          <hr>
+          <p><strong>Productos:</strong> {{vm.carrito.length}}</p>
+          <p><strong>Total:</strong> S/ {{vm.calcularTotal()}}</p>
+
+          <button class="btn btn-success w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalPago">
+            Proceder al pago
+          </button>
+
+          <button class="btn btn-outline-danger w-100" ng-click="vm.vaciarCarrito()">
+            Vaciar carrito
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal de Pago -->
+<div class="modal fade" id="modalPago" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content" ng-controller="FormularioPagoController as pago">
+      <div class="modal-header">
+        <h5 class="modal-title">Formulario de Pago</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <form name="pago.formularioPago" ng-submit="pago.enviar()" novalidate>
+        <div class="modal-body">
+          <!-- Generar campos automáticamente -->
+          <div class="mb-3" ng-repeat="campo in pago.estructura">
+            <label class="form-label" for="{{campo.clave}}">{{ campo.etiqueta }}</label>
+            <input id="{{campo.clave}}" type="text" class="form-control" ng-model="pago.datos[campo.clave]" required />
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Procesar Pago</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
