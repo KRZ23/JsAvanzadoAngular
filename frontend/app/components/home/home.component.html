@@ -1,0 +1,310 @@
+<!-- Plantilla HTML para la vista de inicio -->
+<header ng-include="'css/home.css'"></header>
+<header>
+    <nav class="navbar navbar-expand-lg p-2 navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#/">
+                <img src="assets/public/Logo Jimdur/logo_Jimdur_pequeno.png" alt="Jimdur Logo">
+            </a>
+
+            <!-- Contenido principal de la navegación -->
+            <div class="collapse navbar-collapse ms-5" id="navbarNav">
+                <!-- Enlaces de navegación (centrados) -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/productos">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                            <li><a class="dropdown-item" href="#">Motores</a></li>
+                            <li><a class="dropdown-item" href="#">Frenos</a></li>
+                            <li><a class="dropdown-item" href="#">Transmisión</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ver todas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/contacto">Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Barra de búsqueda (visible solo en pantallas grandes) -->
+                <div class="d-none d-lg-flex">
+                    <form class="search-form d-flex border" role="search">
+                        <input class="form-control" type="search" placeholder="Buscar productos..."
+                            aria-label="Buscar">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- Acciones del usuario (visibles solo en pantallas grandes) -->
+                <div class="d-none d-lg-flex align-items-center ms-3">
+                    <!-- Favoritos -->
+                    <div class="dropdown">
+                        <button class="btn-icon position-relative" type="button" id="favoritosDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-heart"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger badge-count">
+                                2
+                            </span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="favoritosDropdown">
+                            <h6 class="fw-bold mb-3">Mis Favoritos</h6>
+                            <div class="cart-item d-flex align-items-center">
+                                <img src="assets/public/productos/aceite.webp" class="me-3" alt="Producto">
+                                <div>
+                                    <p class="mb-0 fw-bold">Filtro de aceite</p>
+                                    <small class="text-muted">S/. 45.00</small>
+                                </div>
+                                <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                            </div>
+                            <div class="cart-item d-flex align-items-center">
+                                <img src="assets/public/productos/casco.webp" class="me-3" alt="Producto">
+                                <div>
+                                    <p class="mb-0 fw-bold">Kit de frenos</p>
+                                    <small class="text-muted">S/. 120.00</small>
+                                </div>
+                                <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                            </div>
+                            <div class="d-grid gap-2 mt-3">
+                                <a href="#" class="btn btn-sm btn-danger">Ver todos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carrito -->
+                    <div class="dropdown">
+                        <button class="btn-icon position-relative" type="button" id="carritoDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger badge-count">
+                                3
+                            </span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="carritoDropdown">
+                            <h6 class="fw-bold mb-3">Mi Carrito</h6>
+                            <div class="cart-item d-flex align-items-center">
+                                <img src="assets/public/productos/aceite.webp" class="me-3" alt="Producto">
+                                <div>
+                                    <p class="mb-0 fw-bold">Filtro de aceite</p>
+                                    <small class="text-muted">1 x S/. 45.00</small>
+                                </div>
+                                <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                            </div>
+                            <div class="cart-item d-flex align-items-center">
+                                <img src="assets/public/productos/casco.webp" class="me-3" alt="Producto">
+                                <div>
+                                    <p class="mb-0 fw-bold">Kit de frenos</p>
+                                    <small class="text-muted">1 x S/. 120.00</small>
+                                </div>
+                                <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                            </div>
+                            <div class="cart-item d-flex align-items-center">
+                                <img src="assets/public/productos/aceite.webp" class="me-3" alt="Producto">
+                                <div>
+                                    <p class="mb-0 fw-bold">Aceite motor</p>
+                                    <small class="text-muted">2 x S/. 35.00</small>
+                                </div>
+                                <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <span>Total:</span>
+                                <span class="fw-bold">S/. 235.00</span>
+                            </div>
+                            <div class="d-grid gap-2 mt-3">
+                                <a href="#" class="btn btn-sm btn-danger">Proceder al pago</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acceder/Usuario -->
+                    <button class="btn-icon active ms-2" ng-click="$root.showAuthModal()" ng-hide="$root.isAuthenticated()">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="main-content" ng-controller="HomeController as homeCtrl">
+    <!-- SECCIÓN CARRUSEL DE OFERTAS -->
+    <section class="carousel-section py-5" id="ofertas">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">NUESTRAS <span class="text-danger">OFERTAS</span></h2>
+                <p class="fw-normal mb-4">Descubre nuestras promociones especiales en repuestos y accesorios para motos.</p>
+            </div>
+
+            <!-- Carrusel de Bootstrap -->
+            <div id="ofertasCarrusel" class="carousel slide shadow" data-bs-ride="carousel">
+                <!-- Indicadores del carrusel -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#ofertasCarrusel" data-bs-slide-to="{{$index}}" ng-class="{'active': $index === 0}" ng-repeat="oferta in homeCtrl.ofertas" aria-current="{{$index === 0}}" aria-label="Oferta {{$index + 1}}"></button>
+                </div>
+
+                <!-- Slides del carrusel -->
+                <div class="carousel-inner" ng-if="homeCtrl.ofertas.length > 0">
+                    <div class="carousel-item" ng-class="{'active': $index === 0}" ng-repeat="oferta in homeCtrl.ofertas">
+                        <img ng-src="{{oferta.imagen}}" class="d-block w-100" alt="{{oferta.titulo}}">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>{{oferta.titulo}}</h3>
+                            <p>{{oferta.descripcion}}</p>
+                            <a ng-href="{{oferta.enlace}}" class="btn btn-danger btn-sm">Ver oferta</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ofertasCarrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ofertasCarrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN HERO Y PRODUCTOS -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="hero-text animated">
+                        <h1 class="text-dark fw-bold">Bienvenido a <span class="highlight">JIMDUR
+                                <br>Repuestos</span></h1>
+                        <p>Encuentra los repuestos y accesorios de alta calidad que necesitas para tu moto con
+                            envíos a todo el país.</p>
+                        <div class="d-flex flex-wrap">
+                            <a href="#/ofertas" class="btn btn-primary btn-responsive me-2 mb-2">Ofertas
+                                Especiales</a>
+                            <a href="#/catalogo" class="btn btn-outline-dark btn-responsive mb-2">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="assets/public/moto.jpg" alt="Moto" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRODUCTOS -->
+    <section class="productos-section bg-light py-5" id="productos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-dark fw-bold">Últimos <span class="text-danger">Productos</span></h2>
+                <p>Explora nuestra selección de productos más recientes con la mejor calidad para tu moto</p>
+                <a href="#/productos" class="btn btn-outline-dark btn-ver-mas">Ver más productos</a>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4" ng-repeat="producto in homeCtrl.productos">
+                    <div class="card h-100">
+                        <span class="badge-offer" ng-if="producto.descuento">{{producto.descuento}}% OFF</span>
+                        <img ng-src="{{producto.imagen}}" class="card-img-top" alt="{{producto.nombre}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{producto.nombre}}</h5>
+                            <p class="card-text">S/ {{producto.precio}}</p>
+                            <small class="text-muted d-block mb-3">
+                                <i class="fas fa-star text-warning" ng-repeat="star in [].constructor(producto.calificacion) track by $index"></i>
+                                <i class="far fa-star text-warning" ng-repeat="star in [].constructor(5 - producto.calificacion) track by $index"></i>
+                                ({{producto.reviews}})
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary add-to-cart" ng-click="homeCtrl.agregarAlCarrito(producto)">
+                                <i class="fas fa-shopping-cart me-2"></i>Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONSEJOS DE MANTENIMIENTO -->
+    <section class="consejos-section py-5" id="consejos">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="text-dark fw-bold">Consejos para <span class="text-danger">Mantenimiento</span></h2>
+                <p>Descubre cómo mantener tu moto en óptimas condiciones</p>
+                <button id="boton-leer-mas" class="btn btn-dark mt-3" ng-click="homeCtrl.toggleConsejos()">{{homeCtrl.botonTexto}}</button>
+            </div>
+
+            <div class="row g-4" ng-show="homeCtrl.mostrarConsejos">
+                <div class="col-md-6" ng-repeat="consejo in homeCtrl.consejos">
+                    <div class="d-flex align-items-start">
+                        <div class="flex-shrink-0 me-3">
+                            <img ng-src="{{consejo.imagen}}" alt="{{consejo.titulo}}" class="img-fluid" style="width: 100px;">
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-2">{{consejo.titulo}}</h4>
+                            <p class="text-muted">{{consejo.descripcion}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE OPINIONES DE CLIENTES -->
+    <section class="opiniones-section py-5 bg-light" id="opiniones">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <h2 class="text-dark fw-bold">Opiniones de <span class="highlight">Clientes</span></h2>
+                        <p>Lo que nuestros clientes dicen sobre nuestros productos y servicios</p>
+                        <a href="#/opiniones" class="btn btn-dark mt-3">Ver más</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <!-- Espacio para contenido adicional -->
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" ng-repeat="opinion in homeCtrl.opiniones">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0">
+                                    <img ng-src="{{opinion.imagen}}" alt="{{opinion.nombre}}" class="rounded-circle">
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-0">{{opinion.nombre}}</h5>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star" ng-repeat="star in [].constructor(opinion.calificacion) track by $index"></i>
+                                        <i class="far fa-star" ng-repeat="star in [].constructor(5 - opinion.calificacion) track by $index"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">{{opinion.comentario}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
