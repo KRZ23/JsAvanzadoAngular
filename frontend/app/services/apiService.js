@@ -13,11 +13,11 @@ angular.module("ProyctoAngular").service("apiService", [
 
         // Verificar la conexión a la API con diagnóstico detallado
         service.checkConnection = function () {
-            console.log("Verificando conexión a la API:", apiUrl + "/lugares");
+            console.log("Verificando conexión a la API:", apiUrl + "/prueba");
 
             return $http({
                 method: "GET",
-                url: apiUrl + "/lugares",
+                url: apiUrl + "/prueba",
                 headers: {
                     Accept: "application/json",
                 },

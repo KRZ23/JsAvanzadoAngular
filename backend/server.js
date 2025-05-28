@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api/auth', authRoutes);
 
 // Ruta de prueba
-app.get('/lugares', (req, res) => {
+app.get('/prueba', (req, res) => {
     res.json({ message: 'API funcionando correctamente' });
 });
 
