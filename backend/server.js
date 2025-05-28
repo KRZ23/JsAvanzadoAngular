@@ -16,7 +16,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/ofertas', ofertasRoutes);
 
 // Ruta de prueba
-app.get('/lugares', (req, res) => {
+app.get('/prueba', (req, res) => {
     res.json({ message: 'API funcionando correctamente' });
 });
 
