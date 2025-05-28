@@ -8,7 +8,9 @@ angular.module("ProyctoAngular", ["ngRoute"])
             // Configuración de rutas
             $routeProvider
                 .when("/", {
-                    template: "<home></home>"
+                    templateUrl: "app/components/home/home.component.html",
+                    controller: "HomeController",
+                    controllerAs: "homeCtrl"
                 })
                 .when("/login", {
                     template: "<login></login>"
